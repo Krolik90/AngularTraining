@@ -1,9 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <h1>
-    Welcome to {{ title }}!
+  {{ title }}!
 </h1>
 
+<nav>
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/heroes">Heroes</a>
+</nav>
 
 
-<app-heroes></app-heroes>
 
+<router-outlet></router-outlet> <!-- miejsce, w którym nasz zdefiniowany komponent będzie się renderował -->
+<app-messages></app-messages>
